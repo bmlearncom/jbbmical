@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB BMI CALCULATOR</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="BM LOGO.png" type="image/x-icon">
+</head>
+<style>
+    body {
+        background-image: url("images\ \(1\).jfif");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .inputs {
+        color: white;
+    }
+    #weightValue, #heightValue {
+        color: black;
+    }
+    @media (max-width: 700px) {
+        .container {
+            font-size: 10px
+        }
+    }
+</style>
+<body>
+    <div class="container" style="background-image: linear-gradient(to right top, #5a5e64, #3592c8, #008793, #00bf72, #a8eb12);">
+        <h1 >JB BMI CALCULATOR</h1>
+        <div class="inputs">
+            <input type="range" id="weightRange" min="1" max="150" value="0"><br><br><br>
+            <div id="weightDisplay">Weight: <span id="weightValue">50</span> kg</div><br><br>
+            <input type="range" id="heightRange" min="1" max="250" value="0"><br><br><br>
+            <div id="heightDisplay">Height: <span id="heightValue">150</span> cm</div><br><br>
+        
+            <button class="button-64" role="button" onclick="Myresult()"><span class="text">Calculate</span></button><br><br>
+            <div id="bmiResult" class="result">BMI: <p id="results">0</p></div><br>
+            <div class="result" style="font-size: 25px;">Status: <span id="bmiStatus" style="background: none;">None</span></div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
